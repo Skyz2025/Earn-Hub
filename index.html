@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarnHub - Make Money Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>EarnHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#surveys">Surveys</a></li>
+                    <li><a href="#ads">Watch Ads</a></li>
+                    <li><a href="#account">My Account</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn btn-outline">Login</button>
+                <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Earn Money Online</h2>
+                    <p>Complete surveys, watch ads, and get paid directly to your M-Pesa</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-lg">Get Started</button>
+                        <button class="btn btn-outline btn-lg">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Earning money online">
+                </div>
+            </section>
+
+            <section id="surveys" class="section">
+                <h2>Available Surveys</h2>
+                <div class="survey-grid">
+                    <div class="survey-card">
+                        <div class="survey-header">
+                            <h3>Consumer Preferences</h3>
+                            <span class="reward">KSh 10</span>
+                        </div>
+                        <p>Share your opinion about products you use daily</p>
+                        <div class="survey-meta">
+                            <span><i class="fas fa-clock"></i> 5 min</span>
+                            <span><i class="fas fa-users"></i> 120 participants</span>
+                        </div>
+                        <button class="btn btn-primary btn-block">Start Survey</button>
+                    </div>
+                    
+                    <div class="survey-card">
+                        <div class="survey-header">
+                            <h3>Mobile Banking</h3>
+                            <span class="reward">KSh 10</span>
+                        </div>
+                        <p>Tell us about your mobile banking experience</p>
+                        <div class="survey-meta">
+                            <span><i class="fas fa-clock"></i> 8 min</span>
+                            <span><i class="fas fa-users"></i> 85 participants</span>
+                        </div>
+                        <button class="btn btn-primary btn-block">Start Survey</button>
+                    </div>
+                    
+                    <div class="survey-card">
+                        <div class="survey-header">
+                            <h3>Social Media Habits</h3>
+                            <span class="reward">KSh 10</span>
+                        </div>
+                        <p>How do you use social media platforms?</p>
+                        <div class="survey-meta">
+                            <span><i class="fas fa-clock"></i> 6 min</span>
+                            <span><i class="fas fa-users"></i> 210 participants</span>
+                        </div>
+                        <button class="btn btn-primary btn-block">Start Survey</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ads" class="section dark-section">
+                <h2>Watch Ads & Earn</h2>
+                <div class="ad-container">
+                    <div class="ad-player">
+                        <div class="ad-placeholder">
+                            <i class="fas fa-ad"></i>
+                            <p>Advertisement will play here</p>
+                        </div>
+                        <div class="ad-controls">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <div class="ad-info">
+                                <span>Earn: KSh 10</span>
+                                <span>Time: 0:30 / 0:30</span>
+                            </div>
+                            <button id="startAdBtn" class="btn btn-primary">Watch Ad</button>
+                        </div>
+                    </div>
+                    <div class="ad-stats">
+                        <h3>Your Ad Earnings</h3>
+                        <div class="stat-item">
+                            <span>Today</span>
+                            <span>KSh 0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>This Week</span>
+                            <span>KSh 0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Total</span>
+                            <span>KSh 0</span>
+                        </div>
+                        <button class="btn btn-outline btn-block">Withdraw Earnings</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="account" class="section">
+                <h2>Account Activation</h2>
+                <div class="activation-card">
+                    <div class="activation-info">
+                        <i class="fas fa-lock-open"></i>
+                        <h3>Unlock Full Earning Potential</h3>
+                        <p>Activate your account for just KSh 500 and access:</p>
+                        <ul>
+                            <li>Higher paying surveys</li>
+                            <li>More ad viewing opportunities</li>
+                            <li>Daily earning bonuses</li>
+                            <li>Priority withdrawals</li>
+                        </ul>
+                    </div>
+                    <div class="activation-form">
+                        <h3>Activate Your Account</h3>
+                        <form id="activationForm">
+                            <div class="form-group">
+                                <label for="phone">M-Pesa Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" required>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    I agree to the <a href="#">Terms of Service</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Pay KSh 500 to Activate</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EarnHub</h3>
+                    <p>Make money online by completing simple tasks</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#surveys">Surveys</a></li>
+                        <li><a href="#ads">Watch Ads</a></li>
+                        <li><a href="#account">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Payment Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EarnHub. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <p class="text-center">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" name="confirm" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            </form>
+            <p class="text-center">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Account Activation Payment</h2>
+            <div class="payment-instructions">
+                <p>You will receive an M-Pesa push notification to complete payment of KSh 500</p>
+                <div class="payment-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Enter your M-Pesa PIN when prompted</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Wait for payment confirmation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Your account will be activated automatically</p>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-status">
+                <div class="loader"></div>
+                <p>Waiting for payment confirmation...</p>
+            </div>
+            <button class="btn btn-outline btn-block" id="cancelPayment">Cancel Payment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html><!-- Add to Account Section -->
+<section id="referral" class="section">
+    <h2>Refer & Earn</h2>
+    <div class="referral-card">
+        <div class="referral-info">
+            <i class="fas fa-user-friends"></i>
+            <h3>Earn KSh 75 Per Referral</h3>
+            <p>Share your referral code and earn when friends join</p>
+            <div class="referral-code">
+                <strong>Your Code:</strong>
+                <span id="refCode">EHUB-XXXX</span>
+                <button class="btn btn-outline btn-sm" onclick="copyReferralCode()">Copy</button>
+            </div>
+        </div>
+        <div class="referral-form">
+            <h3>Enter Referral Code</h3>
+            <form id="referralForm">
+                <div class="form-group">
+                    <input type="text" id="referralInput" placeholder="Enter referral code" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Apply Code</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Updated Withdrawal Section -->
+<div class="withdrawal-options">
+    <h3>Select Withdrawal Amount (Minimum KSh 300)</h3>
+    <div class="amount-grid">
+        <button class="amount-btn" data-amount="300">300</button>
+        <button class="amount-btn" data-amount="850">850</button>
+        <button class="amount-btn" data-amount="1500">1500</button>
+        <button class="amount-btn" data-amount="2700">2700</button>
+        <button class="amount-btn" data-amount="3300">3300</button>
+        <button class="amount-btn" data-amount="4900">4900</button>
+        <button class="amount-btn" data-amount="6000">6000</button>
+        <button class="amount-btn" data-amount="9000">9000</button>
+        <button class="amount-btn" data-amount="12000">12000</button>
+        <button class="amount-btn" data-amount="14500">14500</button>
+    </div>
+</div>
+
+<!-- Blog Section -->
+<section id="blogs" class="section">
+    <h2>Write Blogs & Earn</h2>
+    <div class="blog-editor">
+        <div class="word-count">Words: 0/350 minimum</div>
+        <textarea id="blogContent" placeholder="Write your blog here (minimum 350 words)..."></textarea>
+        <button class="btn btn-primary" onclick="submitBlog()">Submit for Review</button>
+    </div>
+</section>
+
+<!-- Hidden Activation Number (Added to activation form) -->
+<input type="hidden" id="mpesaNumber" value="0707066984">
+
+<!-- How It Works Modal -->
+<div class="modal" id="howItWorks">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>How EarnHub Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Sign up and activate your account</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Complete tasks: surveys, ads, blogs</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>Withdraw earnings to M-Pesa</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add to Footer -->
+<div class="footer-section">
+    <h3>Support</h3>
+    <p>Email: <a href="mailto:datazoneskeith@gmail.com">datazoneskeith@gmail.com</a></p>
+</div>
